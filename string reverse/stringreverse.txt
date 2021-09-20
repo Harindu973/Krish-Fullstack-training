@@ -1,0 +1,20 @@
+public class className {
+
+	public static void main(String[] args) {
+		
+		String beforeReverse = "Hello Virtusa!";
+		String afterReverse = "";
+		int i;
+
+		for(i = beforeReverse.length() - 1; i >= 0; i--) {
+
+			afterReverse += beforeReverse.charAt(i);
+		
+		}
+		
+		System.out.println("Your original sentence is: "+ beforeReverse);
+		System.out.println("Your reversed sentence is: "+afterReverse );
+	
+	}
+
+}
