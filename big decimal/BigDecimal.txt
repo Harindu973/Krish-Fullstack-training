@@ -1,0 +1,24 @@
+
+import java.math.BigDecimal;
+
+public class BigD{
+
+       public static void main(String[] args) {
+            
+            //Let's imaging I have Charged small value from my Account as a Tax.
+            //Available Account Value Before get Charged = 10.03/=
+            //Tax Aount = 10.02/=
+            
+  
+               double Tax_Double = 10.02;
+               double AvailableValue_Double = 10.03;
+               double AvailableBalance_Double = AvailableValue_Double - Tax_Double;
+               System.out.println("Remaining Balance In account According to Double: "+AvailableBalance_Double);
+               
+
+               BigDecimal Tax_BD = new BigDecimal("10.02");
+               BigDecimal AvailableAmount_BD = new BigDecimal("10.03");
+               BigDecimal AvailableBalance_BD = AvailableAmount_BD.subtract(Tax_BD);
+               System.out.println("Remaining Balance In account According to BigDecimal: "+AvailableBalance_BD);
+	}
+}
